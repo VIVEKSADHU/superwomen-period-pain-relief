@@ -9,7 +9,7 @@ export default function FinalCTASection() {
         </h2>
         <div className="mt-10 flex flex-col items-center gap-4">
           <Button size="lg" className="font-bold text-lg px-8 py-6">
-            Start Your Comfort Routine Today – ₹199
+            Start Your Comfort Routine Today – Rs. 199
           </Button>
           <p className="text-sm text-muted-foreground">
             Instant PDF + printable tools | Private & discreet

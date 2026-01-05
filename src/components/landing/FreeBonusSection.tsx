@@ -15,7 +15,7 @@ export default function FreeBonusSection() {
           <div className="relative z-10">
             <div className="text-center">
               <h2 className="font-headline text-3xl font-bold tracking-tight text-accent-foreground sm:text-4xl">
-                Free Gifts (Worth More Than ₹499)
+                Free Gifts (Worth More Than Rs. 499)
               </h2>
             </div>
             <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:items-start">
@@ -46,7 +46,7 @@ export default function FreeBonusSection() {
               </div>
             </div>
             <p className="mt-12 text-center text-md font-semibold text-accent-foreground/80">
-              Free bonuses available only with current ₹199 launch price.
+              Free bonuses available only with current Rs. 199 launch price.
             </p>
           </div>
         </div>

@@ -17,7 +17,7 @@ export default function HeroSection() {
         </div>
         <div className="mt-10 flex flex-col items-center gap-4">
           <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>
-            <a href="#cta">Get Instant Access – Just ₹199</a>
+            <a href="#cta">Get Instant Access – Just Rs. 199</a>
           </Button>
           <p className="text-sm text-muted-foreground">
             Instant PDF + printable tools | Private & discreet
