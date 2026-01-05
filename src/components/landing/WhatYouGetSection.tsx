@@ -4,9 +4,11 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const features = [
-  'The Complete Menstrual Comfort Guide (PDF)',
+  'The Complete Menstrual Comfort Guide (25-page PDF)',
   'Emergency Cramp Relief Routine (1-page printable)',
-  'Tea Recipes Cheat Sheet (based on symptoms)',
+  'Symptom-Specific Tea Recipes (for cramps, bloating, fatigue)',
+  'Printable Period Pain Trigger Tracker',
+  '‘When Cramps Are NOT Normal’ Doctor-Visit Checklist',
 ];
 
 export default function WhatYouGetSection() {
