@@ -10,8 +10,8 @@
     --card-foreground: 20 15% 25%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 15% 25%;
-    --primary: 350 87% 75%; /* Blush Pink */
-    --primary-foreground: 350 100% 10%; /* Dark Red for contrast on pink */
+    --primary: 0 87% 75%; /* Vibrant Red */
+    --primary-foreground: 0 100% 10%; /* Dark Red for contrast on pink */
     --secondary: 240 50% 96%; /* Lighter Lavender */
     --secondary-foreground: 240 10% 25%;
     --muted: 240 30% 94%;
@@ -22,7 +22,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 60 20% 88%;
     --input: 0 0% 100%;
-    --ring: 350 87% 75%; /* Blush Pink for ring */
+    --ring: 0 87% 75%; /* Vibrant Red for ring */
     --radius: 0.8rem; /* A bit more rounded for a softer feel */
   }
 
@@ -33,8 +33,8 @@
     --card-foreground: 60 30% 92%;
     --popover: 240 10% 10%;
     --popover-foreground: 60 30% 92%;
-    --primary: 350 87% 75%;
-    --primary-foreground: 350 100% 10%;
+    --primary: 0 87% 75%;
+    --primary-foreground: 0 100% 10%;
     --secondary: 240 10% 20%;
     --secondary-foreground: 240 50% 96%;
     --muted: 240 10% 25%;
@@ -45,7 +45,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 10% 25%;
     --input: 240 10% 15%;
-    --ring: 350 87% 75%;
+    --ring: 0 87% 75%;
   }
 }
 
