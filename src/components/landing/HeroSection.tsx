@@ -8,6 +8,18 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative flex items-center pt-12 pb-20 md:pt-16 md:pb-24 lg:min-h-[calc(80vh-56px)]">
       <div className="container grid lg:grid-cols-2 gap-12 items-center">
+        {heroImage && (
+          <div className="relative h-64 w-full lg:hidden">
+            <Image
+              src={heroImage.imageUrl}
+              alt={heroImage.description}
+              data-ai-hint={heroImage.imageHint}
+              fill
+              className="object-cover rounded-lg"
+              priority
+            />
+          </div>
+        )}
         <div className="text-center lg:text-left z-10">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             Your Period Shouldn’t Put Your Life on Pause.
@@ -38,6 +50,7 @@ export default function HeroSection() {
             data-ai-hint={heroImage.imageHint}
             fill
             className="object-cover"
+            priority
           />
         </div>
       )}
