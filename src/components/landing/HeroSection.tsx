@@ -6,9 +6,9 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-comfort');
 
   return (
-    <section id="hero" className="py-20 sm:py-24 md:py-32">
-      <div className="container grid lg:grid-cols-2 lg:gap-12 items-center">
-        <div className="text-center lg:text-left">
+    <section id="hero" className="relative min-h-[calc(100vh-56px)] flex items-center">
+      <div className="container grid lg:grid-cols-2 gap-12 items-center">
+        <div className="text-center lg:text-left z-10 py-12">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Your Period Shouldn’t Put Your Life on Pause.
           </h1>
@@ -29,19 +29,18 @@ export default function HeroSection() {
             </p>
           </div>
         </div>
-        <div className="mt-12 lg:mt-0">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
-              data-ai-hint={heroImage.imageHint}
-              width={600}
-              height={400}
-              className="rounded-lg shadow-xl mx-auto"
-            />
-          )}
-        </div>
       </div>
+      {heroImage && (
+        <div className="hidden lg:block absolute top-0 right-0 h-full w-1/2">
+          <Image
+            src={heroImage.imageUrl}
+            alt={heroImage.description}
+            data-ai-hint={heroImage.imageHint}
+            fill
+            className="object-cover"
+          />
+        </div>
+      )}
     </section>
   );
 }
