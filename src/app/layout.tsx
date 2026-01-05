@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Period Peace',
+  title: 'Superwomen',
   description: 'Your guide to a comfortable period. Natural relief for menstrual cramps, bloating, and fatigue.',
 };
 
