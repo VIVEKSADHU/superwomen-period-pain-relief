@@ -12,8 +12,8 @@ const problems = [
 export default function ProblemAwarenessSection() {
   const problemImage = PlaceHolderImages.find(p => p.id === 'woman-in-pain');
   return (
-    <section id="problem" className="bg-secondary py-20 sm:py-24">
-      <div className="container">
+    <section id="problem" className="bg-secondary">
+      <div className="container py-20 sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             If This Sounds Like You, You’re Not Alone

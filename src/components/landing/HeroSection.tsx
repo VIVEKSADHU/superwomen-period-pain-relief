@@ -6,9 +6,9 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-comfort');
 
   return (
-    <section id="hero" className="relative min-h-[calc(100vh-56px)] flex items-center">
+    <section id="hero" className="relative min-h-[calc(80vh-56px)] flex items-center">
       <div className="container grid lg:grid-cols-2 gap-12 items-center">
-        <div className="text-center lg:text-left z-10 py-12">
+        <div className="text-center lg:text-left z-10">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Your Period Shouldn’t Put Your Life on Pause.
           </h1>
