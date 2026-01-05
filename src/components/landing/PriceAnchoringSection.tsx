@@ -6,7 +6,7 @@ export default function PriceAnchoringSection() {
   const ctaImage = PlaceHolderImages.find(p => p.id === 'cta-guide-mockup');
 
   return (
-    <section id="cta">
+    <section id="cta" className="py-24 sm:py-32">
       <div className="container grid gap-12 md:grid-cols-2 md:items-center">
         <div className="text-center md:text-left">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">

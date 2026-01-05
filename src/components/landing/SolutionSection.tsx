@@ -27,7 +27,7 @@ const pillars: Pillar[] = [
 
 export default function SolutionSection() {
   return (
-    <section id="solution">
+    <section id="solution" className="py-24 sm:py-32">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
