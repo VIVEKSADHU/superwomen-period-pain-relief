@@ -88,10 +88,21 @@ export default {
             height: '0',
           },
         },
+        fall: {
+          '0%': {
+            transform: 'translateY(var(--start-y)) rotate(var(--rotation-start))',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateY(var(--end-y)) rotate(var(--rotation-end))',
+            opacity: '0',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        fall: 'fall var(--duration) linear var(--delay) forwards',
       },
     },
   },

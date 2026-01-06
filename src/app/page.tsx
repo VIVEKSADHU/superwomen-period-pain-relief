@@ -11,10 +11,12 @@ import FinalCTASection from '@/components/landing/FinalCTASection';
 import Footer from '@/components/landing/Footer';
 import WhoIsThisForSection from '@/components/landing/WhoIsThisForSection';
 import { Button } from '@/components/ui/button';
+import CelebrationEffect from '@/components/landing/CelebrationEffect';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
+      <CelebrationEffect />
       <Header />
       <div className="bg-background text-center p-3">
         <span className="text-xl mx-2" role="img" aria-label="party popper">🎉</span>
