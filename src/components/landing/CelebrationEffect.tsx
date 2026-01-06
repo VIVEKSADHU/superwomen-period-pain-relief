@@ -25,14 +25,6 @@ export default function CelebrationEffect({ originRef }: { originRef: RefObject<
     const originY = rect.top + rect.height / 2;
 
     const generatedParticles: Particle[] = Array.from({ length: PARTICLE_COUNT }).map((_, i) => {
-      const angle = Math.random() * Math.PI * 2; // Random angle in radians
-      const velocity = 50 + Math.random() * 150; // Random speed
-      const endX = Math.cos(angle) * velocity;
-      const endY = Math.sin(angle) * velocity;
-      const scale = 0.5 + Math.random();
-      const duration = 0.8 + Math.random() * 0.4;
-      const delay = Math.random() * 0.2;
-
       return {
         id: i,
         emoji: EMOJIS[i % EMOJIS.length],
@@ -43,8 +35,7 @@ export default function CelebrationEffect({ originRef }: { originRef: RefObject<
           fontSize: `${14 + Math.random() * 12}px`,
           transform: `translate(-50%, -50%)`,
           opacity: 0,
-          transition: `transform ${duration}s cubic-bezier(0.1, 0.9, 0.2, 1.2), opacity ${duration}s ease-out`,
-          transitionDelay: `${delay}s`,
+          transition: `transform 1s cubic-bezier(0.1, 0.9, 0.2, 1.2), opacity 1s ease-out`,
           willChange: 'transform, opacity',
         },
       };
@@ -56,7 +47,6 @@ export default function CelebrationEffect({ originRef }: { originRef: RefObject<
     // This timer will hide and clean up the component after the animation duration
     const mainTimer = setTimeout(() => {
         setIsVisible(false);
-        setParticles([]);
     }, DURATION);
 
     return () => {
@@ -74,21 +64,26 @@ export default function CelebrationEffect({ originRef }: { originRef: RefObject<
         currentParticles.map(p => {
           // Calculate end properties for transition
           const angle = Math.random() * Math.PI * 2;
-          const velocity = 100 + Math.random() * 250;
+          const velocity = 100 + Math.random() * 250; // Spread radius
           const endX = Math.cos(angle) * velocity;
           const endY = Math.sin(angle) * velocity;
-          
+          const scale = 0; // Final scale
+          const duration = 0.8 + Math.random() * 0.4;
+          const delay = Math.random() * 0.2;
+
           return {
             ...p,
             style: {
               ...p.style,
-              transform: `translate(-50%, -50%) translate(${endX}px, ${endY}px) scale(0)`,
+              transition: `transform ${duration}s cubic-bezier(0.1, 0.9, 0.2, 1.2), opacity ${duration}s ease-out`,
+              transitionDelay: `${delay}s`,
+              transform: `translate(-50%, -50%) translate(${endX}px, ${endY}px) scale(${scale})`,
               opacity: 1,
             },
           };
         })
       );
-    }, 50); // A small delay is crucial here
+    }, 50); // A small delay is crucial here to allow initial state to render
 
     return () => clearTimeout(animationTimer);
   }, [particles.length > 0]);
