@@ -18,7 +18,7 @@ export default function Home() {
       <Header />
       <div className="bg-background text-center p-3">
         <Button asChild className="animate-beat">
-            <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Free 5-Minute Emergency Cramp Relief Card</a>
+            <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Click here for Free 5-Minute Emergency Cramp Relief Card</a>
         </Button>
       </div>
       <main className="flex-1">
