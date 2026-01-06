@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-comfort');
@@ -36,6 +37,14 @@ export default function HeroSection() {
               <li className="flex items-center gap-2">✓ Ready in 5 minutes</li>
               <li className="flex items-center gap-2">✓ Works for 95% of women</li>
             </ul>
+             <div className="mt-6 flex flex-col items-center lg:items-start gap-4">
+               <Button asChild>
+                 <a href="https://res.cloudinary.com/dmwghrxqt/image/upload/v1767708842/1767705990_tpqabn.png" target="_blank" rel="noopener noreferrer">free resource for you</a>
+               </Button>
+               <Link href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground underline hover:text-primary">
+                 avail resource
+               </Link>
+             </div>
           </div>
         </div>
       </div>
