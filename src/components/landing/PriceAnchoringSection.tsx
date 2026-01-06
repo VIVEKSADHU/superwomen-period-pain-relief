@@ -18,23 +18,23 @@ export default function PriceAnchoringSection() {
           <div className="mt-8 grid grid-cols-1 gap-8 text-lg sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
             <div className="flex flex-col gap-2">
               <span className="text-muted-foreground">Painkiller Strips</span>
-              <span className="font-bold text-2xl">₹100-300/month</span>
+              <span className="font-bold text-2xl">Rs.100-300/month</span>
               <span className="text-sm text-muted-foreground">Temporary relief, potential side-effects.</span>
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-muted-foreground">Gynaecologist Visit</span>
-              <span className="font-bold text-2xl">₹800-2000+</span>
+              <span className="font-bold text-2xl">Rs.800-2000+</span>
               <span className="text-sm text-muted-foreground">Time-consuming & often leads to more pills.</span>
             </div>
             <div className="flex flex-col gap-2 rounded-lg border-2 border-primary p-4 bg-secondary">
               <span className="text-foreground">The Comfort Guide</span>
-              <span className="font-bold text-3xl text-primary">₹199</span>
+              <span className="font-bold text-3xl text-primary">Rs.199</span>
               <span className="text-sm text-foreground">One-time purchase for lifetime relief.</span>
             </div>
           </div>
           <div className="mt-12 flex flex-col items-center gap-4 md:items-start">
             <Button size="lg" className="font-bold text-lg px-8 py-6">
-              Get The Guide & All Bonuses — Just ₹199
+              Get The Guide & All Bonuses — Just Rs.199
             </Button>
              <p className="text-sm text-muted-foreground">
               Instant PDF + printable tools | Private & discreet
