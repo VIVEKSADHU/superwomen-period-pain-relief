@@ -4,31 +4,31 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const features = [
-  'The Complete Menstrual Comfort Guide (25-page PDF): A comprehensive, easy-to-read guide covering natural, effective methods to manage period discomfort.',
-  'Emergency Cramp Relief Routine (1-page printable): A quick, go-to checklist for the moments you need immediate relief from severe cramps.',
-  'Symptom-Specific Tea Recipes (for cramps, bloating, fatigue): Simple, delicious tea recipes using common kitchen ingredients, tailored to fight your specific symptoms.',
-  'Printable Period Pain Trigger Tracker: A tool to help you identify personal patterns and triggers for your menstrual pain, empowering you to take control.',
-  '‘When Cramps Are NOT Normal’ Doctor-Visit Checklist: A guide to help you understand when your symptoms may require medical attention and how to talk to your doctor.',
+  'The Core 3-Part Comfort Routine: A step-by-step walkthrough of the Heat, Nutrition, and Movement system.',
+  'Emergency SOS Plan: A 1-page printable for when the pain is severe and you need relief, fast.',
+  'Symptom-Specific Recipes: Quick tea and snack recipes to specifically target cramps, bloating, or fatigue.',
+  'Beautifully Illustrated Yoga Poses: Gentle, beginner-friendly stretches designed for period comfort.',
+  'Printable Pain & Trigger Tracker: A simple tool to help you identify what makes your symptoms better or worse.',
 ];
 
 export default function WhatYouGetSection() {
-  const yogaImage = PlaceHolderImages.find(p => p.id === 'yoga-illustrations');
+  const yogaImage = PlaceHolderImages.find(p => p.id === 'cta-guide-mockup');
 
   return (
-    <section id="what-you-get" className="bg-secondary">
-      <div className="container py-24 sm:py-32">
+    <section id="what-you-get" className="bg-secondary py-24 sm:py-32">
+      <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            What You Get
+            What's Inside The Guide?
           </h2>
-          <p className="mt-2 text-lg text-muted-foreground">
-            Everything you need to build a comfort routine that works for you.
+          <p className="mt-4 text-lg text-muted-foreground">
+            This 25-page, beautifully designed PDF is your complete playbook for a more comfortable period. Here’s exactly what you get:
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:max-w-4xl mx-auto">
-          <Card className="flex flex-col">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:max-w-5xl mx-auto items-start">
+          <Card className="flex flex-col h-full">
             <CardHeader>
-              <CardTitle>The Core Toolkit</CardTitle>
+              <CardTitle>The Complete Toolkit</CardTitle>
             </CardHeader>
             <CardContent className="flex-1">
               <ul className="space-y-4">
@@ -41,26 +41,17 @@ export default function WhatYouGetSection() {
               </ul>
             </CardContent>
           </Card>
-          <Card className="flex flex-col">
-            <CardHeader>
-              <CardTitle>Beginner-Friendly Yoga Poses</CardTitle>
-            </CardHeader>
-            <CardContent className="flex-1 flex flex-col justify-center items-center">
-              {yogaImage && (
-                <Image
+          {yogaImage && (
+            <div className="relative h-96 w-full rounded-lg overflow-hidden">
+               <Image
                   src={yogaImage.imageUrl}
                   alt={yogaImage.description}
                   data-ai-hint={yogaImage.imageHint}
-                  width={250}
-                  height={250}
-                  className="rounded-lg shadow-md"
+                  fill
+                  className="rounded-lg object-cover shadow-lg"
                 />
-              )}
-              <p className="mt-4 text-base text-muted-foreground text-center">
-                Beautifully illustrated poses, perfect for all levels.
-              </p>
-            </CardContent>
-          </Card>
+            </div>
+          )}
         </div>
       </div>
     </section>

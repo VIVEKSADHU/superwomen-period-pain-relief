@@ -9,6 +9,7 @@ import SocialProofSection from '@/components/landing/SocialProofSection';
 import SafetyTrustSection from '@/components/landing/SafetyTrustSection';
 import FinalCTASection from '@/components/landing/FinalCTASection';
 import Footer from '@/components/landing/Footer';
+import WhoIsThisForSection from '@/components/landing/WhoIsThisForSection';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <SolutionSection />
         <WhatYouGetSection />
         <FreeBonusSection />
+        <WhoIsThisForSection />
         <PriceAnchoringSection />
         <SocialProofSection />
         <SafetyTrustSection />

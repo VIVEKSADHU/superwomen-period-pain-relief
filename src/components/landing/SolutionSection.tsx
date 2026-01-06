@@ -1,4 +1,4 @@
-import { Flame, PersonStanding, GlassWater } from 'lucide-react';
+import { Flame, CookingPot, Footprints } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface Pillar {
@@ -9,19 +9,19 @@ interface Pillar {
 
 const pillars: Pillar[] = [
   {
-    title: 'Heat Therapy',
-    description: 'Learn what to use, when, and for how long to effectively soothe cramps.',
+    title: 'Targeted Heat Therapy',
+    description: 'The right way to use a simple hot water bag to relax uterine muscles and dramatically reduce cramps in minutes.',
     Icon: Flame,
   },
   {
-    title: 'Herbal Teas',
-    description: 'Get exact recipes for comforting teas and know which ones to avoid during your cycle.',
-    Icon: GlassWater,
+    title: 'Kitchen-First Nutrition',
+    description: 'Simple, 3-ingredient tea recipes using everyday items like ginger and ajwain to fight bloating and calm your system.',
+    Icon: CookingPot,
   },
   {
-    title: 'Gentle Yoga',
-    description: 'Discover simple, 10-minute yoga flows you can do even on your bed for relief.',
-    Icon: PersonStanding,
+    title: '5-Minute Gentle Movement',
+    description: 'Easy, no-sweat stretches you can do on your bed to release tension in your lower back and abdomen.',
+    Icon: Footprints,
   },
 ];
 
@@ -29,14 +29,17 @@ export default function SolutionSection() {
   return (
     <section id="solution" className="py-24 sm:py-32">
       <div className="container">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            One Simple Comfort System for Your Entire Cycle
+            The Solution: A Simple, 3-Part Comfort System
           </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            This isn’t about complicated diets or impossible workout routines. It’s a simple, repeatable system designed for real, busy lives. Each part takes just 5-10 minutes.
+          </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-md grid-cols-1 gap-8 md:max-w-4xl md:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-md grid-cols-1 gap-12 md:max-w-4xl md:grid-cols-3">
           {pillars.map(({ title, description, Icon }) => (
-            <div key={title} className="flex flex-col items-center text-center">
+            <div key={title} className="flex flex-col items-center text-center p-4 rounded-lg hover:bg-card transition-all">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent">
                 <Icon className="h-8 w-8 text-accent-foreground" />
               </div>
@@ -45,9 +48,6 @@ export default function SolutionSection() {
             </div>
           ))}
         </div>
-        <p className="mt-16 text-center text-lg italic text-foreground max-w-3xl mx-auto">
-          Not a “cure”. Not magic. Just proven comfort routines that actually fit real life.
-        </p>
       </div>
     </section>
   );

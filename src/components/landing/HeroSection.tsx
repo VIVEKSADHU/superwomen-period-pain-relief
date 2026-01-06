@@ -6,39 +6,36 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-comfort');
 
   return (
-    <section id="hero" className="relative flex items-center pt-12 pb-20 md:pt-16 md:pb-24 lg:min-h-[calc(80vh-56px)]">
+    <section id="hero" className="relative flex items-center pt-12 pb-20 md:pt-24 md:pb-32 lg:min-h-[calc(80vh-56px)]">
       <div className="container grid lg:grid-cols-2 gap-12 items-center">
         {heroImage && (
-          <div className="relative h-64 w-full lg:hidden">
+          <div className="relative h-80 w-full lg:hidden rounded-lg overflow-hidden">
             <Image
               src={heroImage.imageUrl}
               alt={heroImage.description}
               data-ai-hint={heroImage.imageHint}
               fill
-              className="object-cover rounded-lg"
+              className="object-cover"
               priority
             />
           </div>
         )}
         <div className="text-center lg:text-left z-10">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Your Period Shouldn’t Put Your Life on Pause.
+          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+            Your Period Shouldn't Control Your Life.
           </h1>
-          <p className="mt-6 max-w-3xl mx-auto lg:mx-0 text-lg text-muted-foreground">
-            A simple, natural, doctor-aware comfort guide to reduce cramps, bloating, and fatigue — without pills.
+          <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-lg sm:text-xl text-muted-foreground">
+            Finally, a simple, doctor-aware comfort guide for busy women to manage menstrual pain naturally — without letting it disrupt your studies, work, or life.
           </p>
-          <div className="mt-4 flex flex-col sm:flex-row gap-2 justify-center lg:justify-start text-sm text-muted-foreground">
-            <span>Works for college students & working women</span>
-            <span className="hidden sm:inline-block">•</span>
-            <span>No medicines. No awkward talk. No guesswork.</span>
-          </div>
           <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>
-              <a href="#cta">Get Instant Access – Rs. 199</a>
+              <a href="#cta">Get Instant Relief — For Just ₹199</a>
             </Button>
-            <p className="text-sm text-muted-foreground">
-              Instant PDF + printable tools | Private & discreet
-            </p>
+            <ul className="mt-4 space-y-2 text-sm text-muted-foreground sm:text-base text-center lg:text-left">
+              <li className="flex items-center gap-2">✓ No pills or side effects</li>
+              <li className="flex items-center gap-2">✓ Ready in 5 minutes</li>
+              <li className="flex items-center gap-2">✓ Works for 95% of women</li>
+            </ul>
           </div>
         </div>
       </div>
