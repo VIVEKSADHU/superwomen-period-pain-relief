@@ -37,11 +37,6 @@ export default function HeroSection() {
               <li className="flex items-center gap-2">✓ Ready in 5 minutes</li>
               <li className="flex items-center gap-2">✓ Works for 95% of women</li>
             </ul>
-             <div className="mt-6 flex flex-col items-center lg:items-start gap-4">
-               <Button asChild>
-                 <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Free resource for you</a>
-               </Button>
-             </div>
           </div>
         </div>
       </div>
