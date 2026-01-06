@@ -2,6 +2,13 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const testimonials = [
   {
@@ -55,7 +62,49 @@ export default function SocialProofSection() {
             Relief, Redefined by Women Like You
           </h2>
         </div>
-        <div className="mx-auto mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        {/* Carousel for Mobile */}
+        <Carousel
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+          className="mx-auto mt-16 w-full max-w-xs sm:hidden"
+        >
+          <CarouselContent>
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index}>
+                <div className="p-1">
+                  <Card className="flex h-full flex-col">
+                    <CardContent className="flex-1 p-6">
+                      <blockquote className="flex h-full flex-col justify-between">
+                        <p className="text-foreground">“{testimonial.quote}”</p>
+                        <footer className="mt-4 flex items-center gap-3">
+                          <Avatar>
+                            <AvatarImage
+                              src={`https://i.pravatar.cc/40?u=${testimonial.author}`}
+                              alt={testimonial.author}
+                            />
+                            <AvatarFallback>{testimonial.author.charAt(0)}</AvatarFallback>
+                          </Avatar>
+                          <div>
+                            <p className="font-semibold text-foreground">{testimonial.author}</p>
+                            <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                          </div>
+                        </footer>
+                      </blockquote>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+
+        {/* Grid for Tablet and Desktop */}
+        <div className="mx-auto mt-16 hidden grid-cols-1 gap-6 sm:grid sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="flex flex-col">
               <CardContent className="flex-1 p-6">
