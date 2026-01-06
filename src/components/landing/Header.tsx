@@ -9,9 +9,6 @@ export default function Header() {
         </a>
         <div className="flex items-center gap-4">
           <Button asChild>
-            <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Free resource for you</a>
-          </Button>
-          <Button asChild>
             <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get the Guide</a>
           </Button>
         </div>
