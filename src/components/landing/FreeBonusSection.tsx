@@ -56,7 +56,7 @@ export default function FreeBonusSection() {
               </div>
             </div>
             <p className="mt-12 text-center text-md font-semibold text-accent-foreground/80">
-              Get the guide and all bonuses today for a single, one-time payment of Rs.199.
+              Get the guide and all bonuses today for a single, one-time payment of Rs.399.
             </p>
           </div>
         </div>

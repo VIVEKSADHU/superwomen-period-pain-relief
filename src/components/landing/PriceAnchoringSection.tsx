@@ -29,13 +29,13 @@ export default function PriceAnchoringSection() {
             </div>
             <div className="flex flex-col gap-2 rounded-lg border-2 border-primary p-4 bg-secondary">
               <span className="text-foreground">The Comfort Guide</span>
-              <span className="font-bold text-3xl text-primary">Rs.199</span>
+              <span className="font-bold text-3xl text-primary">Rs.399</span>
               <span className="text-sm text-foreground">One-time purchase for lifetime relief.</span>
             </div>
           </div>
           <div className="mt-12 flex flex-col items-center gap-4 md:items-start">
             <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>
-              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get The Guide & All Bonuses — Just Rs.199</a>
+              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get The Guide & All Bonuses — Just Rs.399</a>
             </Button>
              <p className="text-sm text-muted-foreground">
               Instant PDF + printable tools | Private & discreet
