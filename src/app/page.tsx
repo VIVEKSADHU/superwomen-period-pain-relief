@@ -19,13 +19,9 @@ export default function Home() {
       <CelebrationEffect />
       <Header />
       <div className="bg-background text-center p-3">
-        <span className="text-xl mx-2" role="img" aria-label="party popper">🎉</span>
-        <span className="text-xl mx-2" role="img" aria-label="confetti ball">🎊</span>
         <Button asChild>
             <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">5-Minute Emergency Cramp Relief Card Free</a>
         </Button>
-        <span className="text-xl mx-2" role="img" aria-label="balloon">🎈</span>
-        <span className="text-xl mx-2" role="img" aria-label="party popper">🎉</span>
       </div>
       <main className="flex-1">
         <HeroSection />
