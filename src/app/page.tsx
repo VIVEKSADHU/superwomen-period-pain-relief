@@ -17,7 +17,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <div className="bg-background text-center p-3">
-        <Button asChild>
+        <Button asChild className="animate-beat">
             <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Free 5-Minute Emergency Cramp Relief Card</a>
         </Button>
       </div>

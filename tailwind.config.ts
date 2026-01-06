@@ -88,21 +88,15 @@ export default {
             height: '0',
           },
         },
-        fall: {
-          '0%': {
-            transform: 'translateY(var(--start-y)) rotate(var(--rotation-start))',
-            opacity: '1',
-          },
-          '100%': {
-            transform: 'translateY(var(--end-y)) rotate(var(--rotation-end))',
-            opacity: '0',
-          },
+        beat: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        fall: 'fall var(--duration) linear var(--delay) forwards',
+        beat: 'beat 2s infinite ease-in-out',
       },
     },
   },
