@@ -39,7 +39,7 @@ export default function HeroSection() {
             </ul>
              <div className="mt-6 flex flex-col items-center lg:items-start gap-4">
                <Button asChild>
-                 <a href="https://res.cloudinary.com/dmwghrxqt/image/upload/v1767708842/1767705990_tpqabn.png" target="_blank" rel="noopener noreferrer">🎉 Free resource for you</a>
+                 <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Free resource for you</a>
                </Button>
              </div>
           </div>
