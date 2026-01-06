@@ -39,7 +39,7 @@ export default function Home() {
       )}
       <div className="bg-background text-center p-3">
         <Button asChild className="animate-beat">
-            <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Click here for Free Period Cramp Relief Card</a>
+            <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Click here for Free Period Cramp Relief Tips</a>
         </Button>
       </div>
       <main className="flex-1">
