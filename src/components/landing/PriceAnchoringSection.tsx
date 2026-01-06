@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function PriceAnchoringSection() {
   const ctaImage = PlaceHolderImages.find(p => p.id === 'cta-guide-mockup');
@@ -42,7 +43,7 @@ export default function PriceAnchoringSection() {
           </div>
         </div>
         {ctaImage && (
-          <div className="relative order-first h-80 w-full md:order-last">
+           <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="relative order-first h-80 w-full md:order-last">
             <Image
               src={ctaImage.imageUrl}
               alt={ctaImage.description}
@@ -50,7 +51,7 @@ export default function PriceAnchoringSection() {
               fill
               className="rounded-lg object-cover shadow-lg"
             />
-          </div>
+          </a>
         )}
       </div>
     </section>

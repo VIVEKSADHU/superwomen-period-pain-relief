@@ -42,7 +42,7 @@ export default function WhatYouGetSection() {
             </CardContent>
           </Card>
           {yogaImage && (
-            <div className="relative h-96 w-full rounded-lg overflow-hidden">
+            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="relative h-96 w-full rounded-lg overflow-hidden">
                <Image
                   src={yogaImage.imageUrl}
                   alt={yogaImage.description}
@@ -50,7 +50,7 @@ export default function WhatYouGetSection() {
                   fill
                   className="rounded-lg object-cover shadow-lg"
                 />
-            </div>
+            </a>
           )}
         </div>
       </div>
