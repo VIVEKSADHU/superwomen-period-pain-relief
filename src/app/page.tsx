@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <div className="bg-accent text-center p-3">
+      <div className="bg-background text-center p-3">
         <Button asChild>
             <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Free resource for you</a>
         </Button>
