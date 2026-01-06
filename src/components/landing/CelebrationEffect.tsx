@@ -15,12 +15,13 @@ interface EmojiStyle {
 }
 
 export default function CelebrationEffect() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [styles, setStyles] = useState<EmojiStyle[]>([]);
 
   const emojis = ['🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅', '🎉', '🎊', '🎈', '🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅', '🎉', '🎊', '🎈', '🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅', '🎉', '🎊', '🎈', '🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅'];
 
   useEffect(() => {
+    setVisible(true);
     const timer = setTimeout(() => {
       setVisible(false);
     }, 5000); // Disappear after 5 seconds
@@ -38,7 +39,7 @@ export default function CelebrationEffect() {
     })));
     
     return () => clearTimeout(timer);
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []);
 
   if (styles.length === 0) {
     return null; // Don't render on the server or before styles are generated
@@ -47,7 +48,7 @@ export default function CelebrationEffect() {
   return (
     <div
       className={cn(
-        'pointer-events-none fixed inset-0 z-[200] transition-opacity duration-1000',
+        'pointer-events-none fixed inset-0 z-[9999] transition-opacity duration-1000',
         visible ? 'opacity-100' : 'opacity-0'
       )}
       aria-hidden="true"
