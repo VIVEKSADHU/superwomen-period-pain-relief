@@ -18,7 +18,7 @@ export default function CelebrationEffect() {
   const [visible, setVisible] = useState(true);
   const [styles, setStyles] = useState<EmojiStyle[]>([]);
 
-  const emojis = ['🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅', '🎉', '🎊', '🎈', '🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅', '🎉', '🎊', '🎈'];
+  const emojis = ['🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅', '🎉', '🎊', '🎈', '🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅', '🎉', '🎊', '🎈', '🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅', '🎉', '🎊', '🎈', '🎉', '🎊', '🎈', '🥳', '✨', '🪅', '🎊', '🎉', '🎈', '🥳', '✨', '🪅'];
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -26,21 +26,19 @@ export default function CelebrationEffect() {
     }, 5000); // Disappear after 5 seconds
 
     // Generate styles only on the client-side
-    if (styles.length === 0) {
-      setStyles(emojis.map(() => ({
-        '--start-x': `${Math.random() * 100}vw`,
-        '--start-y': `${-20 - Math.random() * 30}vh`,
-        '--end-y': '120vh',
-        '--delay': `${Math.random() * 4}s`,
-        '--duration': `${2 + Math.random() * 3}s`,
-        '--rotation-start': `${Math.random() * 540 - 270}deg`,
-        '--rotation-end': `${Math.random() * 540 - 270}deg`,
-        left: 'var(--start-x)',
-      })));
-    }
+    setStyles(emojis.map(() => ({
+      '--start-x': `${Math.random() * 100}vw`,
+      '--start-y': `${-20 - Math.random() * 30}vh`,
+      '--end-y': '120vh',
+      '--delay': `${Math.random() * 4}s`,
+      '--duration': `${2 + Math.random() * 3}s`,
+      '--rotation-start': `${Math.random() * 540 - 270}deg`,
+      '--rotation-end': `${Math.random() * 540 - 270}deg`,
+      left: 'var(--start-x)',
+    })));
     
     return () => clearTimeout(timer);
-  }, []);
+  }, []); // Empty dependency array ensures this runs once on mount
 
   if (styles.length === 0) {
     return null; // Don't render on the server or before styles are generated
