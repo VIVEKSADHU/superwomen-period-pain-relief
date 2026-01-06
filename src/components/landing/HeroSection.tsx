@@ -26,7 +26,7 @@ export default function HeroSection() {
             Your Period Shouldn't Control Your Life.
           </h1>
           <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-lg sm:text-xl text-muted-foreground">
-            Finally, a simple, doctor-aware comfort guide for busy women to manage menstrual pain naturally — without letting it disrupt your studies, work, or life.
+            Finally, a simple, doctor-aware comfort guide for busy women to manage menstrual pain naturally — without letting it disrupt your work, or life.
           </p>
           <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>

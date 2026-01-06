@@ -9,7 +9,7 @@ interface TargetAudience {
 
 const audience: TargetAudience[] = [
   {
-    title: 'College Students',
+    title: 'Students',
     description: 'Who need to focus on exams and deadlines, not on debilitating cramps.',
     Icon: GraduationCap,
   },
