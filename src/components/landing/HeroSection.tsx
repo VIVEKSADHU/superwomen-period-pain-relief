@@ -41,9 +41,6 @@ export default function HeroSection() {
                <Button asChild>
                  <a href="https://res.cloudinary.com/dmwghrxqt/image/upload/v1767708842/1767705990_tpqabn.png" target="_blank" rel="noopener noreferrer">🎉 free resource for you</a>
                </Button>
-               <Link href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground underline hover:text-primary">
-                 avail resource
-               </Link>
              </div>
           </div>
         </div>
