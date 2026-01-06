@@ -29,7 +29,7 @@ export default function HeroSection() {
           </p>
           <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>
-              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Relief — For Just Rs.199</a>
+              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — For Just Rs.199</a>
             </Button>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground sm:text-base text-center lg:text-left">
               <li className="flex items-center gap-2">✓ No pills or side effects</li>
