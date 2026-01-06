@@ -33,8 +33,8 @@ export default function PriceAnchoringSection() {
             </div>
           </div>
           <div className="mt-12 flex flex-col items-center gap-4 md:items-start">
-            <Button size="lg" className="font-bold text-lg px-8 py-6">
-              Get The Guide & All Bonuses — Just Rs.199
+            <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>
+              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get The Guide & All Bonuses — Just Rs.199</a>
             </Button>
              <p className="text-sm text-muted-foreground">
               Instant PDF + printable tools | Private & discreet
