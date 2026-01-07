@@ -33,7 +33,7 @@ export default function Home() {
 
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-background">
       <Header />
       {showCelebration && ctaRef.current && (
           <CelebrationEffect originRef={ctaRef} />

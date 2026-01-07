@@ -30,18 +30,18 @@ export default function SolutionSection() {
     <section id="solution" className="py-24 sm:py-32">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            The Solution: A Simple, 3-Part Comfort System
+          <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            A Simple, 3-Part Comfort System
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             This isn’t about complicated diets or impossible workout routines. It’s a simple, repeatable system designed for real, busy lives. Each part takes just 5-10 minutes.
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-md grid-cols-1 gap-12 md:max-w-4xl md:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-md grid-cols-1 gap-8 md:max-w-none md:grid-cols-3 md:gap-12">
           {pillars.map(({ title, description, Icon }) => (
-            <div key={title} className="flex flex-col items-center text-center p-4 rounded-lg hover:bg-card transition-all">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent">
-                <Icon className="h-8 w-8 text-accent-foreground" />
+            <div key={title} className="flex flex-col items-center text-center p-4 rounded-lg transition-all">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <Icon className="h-8 w-8" />
               </div>
               <h3 className="mt-6 font-headline text-xl font-bold">{title}</h3>
               <p className="mt-2 text-base text-muted-foreground">{description}</p>
