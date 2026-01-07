@@ -40,9 +40,7 @@ export default function Home() {
       )}
       <main className="flex-1">
         <div className="bg-secondary text-center py-3">
-            <Link href="#footer" className="font-bold text-secondary-foreground hover:underline">
-                Not ready? Check out the free resources at the bottom 👇
-            </Link>
+            <p className="font-bold text-secondary-foreground">✨ Your 50% discount is applied! Offer ends soon...</p>
         </div>
         <HeroSection />
         <ProblemAwarenessSection />
