@@ -1,3 +1,4 @@
+
 'use server';
 
 /**
@@ -42,7 +43,7 @@ const prompt = ai.definePrompt({
   name: 'gentleYogaCalendarPrompt',
   input: {schema: GentleYogaCalendarInputSchema},
   output: {schema: GentleYogaCalendarOutputSchema},
-  model: googleAI.model('gemini-1.5-flash'),
+  model: googleAI.model('gemini-pro'),
   prompt: `You are a certified yoga instructor specializing in gentle and restorative yoga for women experiencing menstrual discomfort.
 
   Based on the user's input, create a personalized 7-day yoga calendar with specific poses for each day.
