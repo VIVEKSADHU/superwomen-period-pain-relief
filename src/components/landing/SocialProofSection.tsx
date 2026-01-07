@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Card, CardContent } from '@/components/ui/card';
@@ -55,8 +56,8 @@ const testimonials = [
 
 export default function SocialProofSection() {
   return (
-    <section id="social-proof" className="bg-secondary">
-      <div className="container py-20 sm:py-24">
+    <section id="social-proof" className="bg-secondary py-20 sm:py-24">
+      <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Relief, Redefined by Women Like You

@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check } from 'lucide-react';
 import Image from 'next/image';
@@ -25,7 +26,7 @@ export default function WhatYouGetSection() {
             This 25-page, beautifully designed PDF is your complete playbook for a more comfortable period. Here’s exactly what you get:
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:max-w-5xl mx-auto items-start">
+        <div className="mt-16 grid gap-12 md:grid-cols-2 lg:max-w-5xl mx-auto items-start">
           <Card className="flex flex-col h-full">
             <CardHeader>
               <CardTitle>The Complete Toolkit</CardTitle>

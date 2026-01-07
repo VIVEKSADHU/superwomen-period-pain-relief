@@ -9,7 +9,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-comfort');
 
   return (
-    <section id="hero" className="relative flex items-center pt-12 pb-20 md:pt-24 md:pb-32 lg:min-h-[calc(80vh-56px)]">
+    <section id="hero" className="relative flex items-center pt-12 pb-20 md:pt-24 md:pb-32">
       <div className="container grid lg:grid-cols-2 gap-12 items-center">
         {heroImage && (
           <div className="relative h-80 w-full rounded-lg overflow-hidden lg:hidden">

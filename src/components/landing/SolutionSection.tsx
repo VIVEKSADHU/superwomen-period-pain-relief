@@ -1,3 +1,4 @@
+
 import { Flame, CookingPot, Footprints } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
