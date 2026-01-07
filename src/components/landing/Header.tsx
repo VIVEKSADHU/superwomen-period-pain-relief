@@ -9,9 +9,9 @@ export default function Header() {
           superwomen.in
         </a>
         <div className="flex items-center gap-x-8">
-            <p className="hidden sm:block text-sm text-muted-foreground font-medium">
+            <Link href="#footer" className="hidden sm:block text-sm text-muted-foreground font-medium hover:text-primary transition-colors">
               Psst! Free resources at the bottom of the page 👇
-            </p>
+            </Link>
           <Button asChild>
             <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get the Guide</a>
           </Button>
