@@ -16,6 +16,7 @@ import Footer from '@/components/landing/Footer';
 import WhoIsThisForSection from '@/components/landing/WhoIsThisForSection';
 import { Button } from '@/components/ui/button';
 import CelebrationEffect from '@/components/landing/CelebrationEffect';
+import Link from 'next/link';
 
 export default function Home() {
   const ctaRef = useRef<HTMLAnchorElement>(null);
@@ -38,6 +39,11 @@ export default function Home() {
           <CelebrationEffect originRef={ctaRef} />
       )}
       <main className="flex-1">
+        <div className="bg-accent text-center py-3">
+            <Link href="#footer" className="font-medium text-accent-foreground hover:underline">
+                Psst! Not ready? Check out the free resources at the bottom 👇
+            </Link>
+        </div>
         <HeroSection />
         <ProblemAwarenessSection />
         <SolutionSection />
