@@ -40,7 +40,7 @@ export default function Home() {
       )}
       <main className="flex-1">
         <div className="bg-secondary text-center py-3">
-          <Link href="#footer" className="font-bold text-secondary-foreground hover:underline">
+          <Link href="#footer" className="font-bold text-secondary-foreground hover:underline inline-block animate-beat">
             Not ready? Get your FREE 5-minute period pain relief kit 👇
           </Link>
         </div>
