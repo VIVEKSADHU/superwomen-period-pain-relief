@@ -4,7 +4,7 @@ import type { RefObject } from 'react';
 
 export default function Footer({ ctaRef }: { ctaRef: RefObject<HTMLAnchorElement> }) {
   return (
-    <footer id="footer" className="py-12 bg-background">
+    <footer id="footer" className="py-16 bg-background">
       <div className="container text-center text-muted-foreground">
         <p className="font-bold text-foreground mb-4">P.S. A Personal Note</p>
         <p className="max-w-3xl mx-auto text-base mb-8">

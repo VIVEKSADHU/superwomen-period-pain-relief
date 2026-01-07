@@ -27,7 +27,7 @@ const audience: TargetAudience[] = [
 
 export default function WhoIsThisForSection() {
   return (
-    <section id="who-is-this-for" className="py-24 sm:py-32">
+    <section id="who-is-this-for" className="py-20 sm:py-24">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">

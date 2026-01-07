@@ -16,7 +16,7 @@ const bonuses = [
 
 export default function FreeBonusSection() {
   return (
-    <section id="bonus" className="py-24 sm:py-32">
+    <section id="bonus" className="py-20 sm:py-24">
       <div className="container">
         <div className="relative rounded-lg bg-accent p-8 md:p-12 lg:p-16 overflow-hidden">
           <div className="relative z-10">

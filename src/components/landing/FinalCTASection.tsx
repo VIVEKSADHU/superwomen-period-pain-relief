@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export default function FinalCTASection() {
   return (
-    <section className="bg-secondary py-24 sm:py-32">
+    <section className="bg-secondary py-20 sm:py-24">
       <div className="container text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Ready to Reclaim Your Comfort?
