@@ -37,9 +37,12 @@ export default function Home() {
       {showCelebration && ctaRef.current && (
           <CelebrationEffect originRef={ctaRef} />
       )}
+       <div className="bg-primary text-center p-3 text-primary-foreground font-bold animate-beat">
+          🎉 Special Launch Offer! Get 50% OFF with code: <span className="underline">NEW50</span> 🎉
+      </div>
       <div className="bg-background text-center p-3">
-        <Button size="lg" asChild className="animate-beat text-lg px-8 py-6">
-            <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">🎉 Click here for Free Period Cramp Relief Tips</a>
+        <Button size="lg" asChild className="text-lg px-8 py-6">
+            <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Click here for Free Period Cramp Relief Tips</a>
         </Button>
       </div>
       <main className="flex-1">
