@@ -37,10 +37,6 @@ export default function Home() {
       {showCelebration && ctaRef.current && (
           <CelebrationEffect originRef={ctaRef} />
       )}
-       <div className="bg-primary text-center p-3 text-primary-foreground font-bold animate-beat">
-          🎉 Special Launch Offer! Get 50% OFF with code: <span className="underline">NEW50</span> 🎉
-      </div>
-      
       <main className="flex-1">
         <HeroSection />
         <ProblemAwarenessSection />

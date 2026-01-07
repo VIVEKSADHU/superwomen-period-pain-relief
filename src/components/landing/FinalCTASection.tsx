@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 
 export default function FinalCTASection() {
@@ -12,7 +13,7 @@ export default function FinalCTASection() {
         </p>
         <div className="mt-10 flex flex-col items-center gap-4">
           <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>
-            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just <span className="line-through mx-2">Rs.399</span> Rs.199!</a>
+            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just <span className="line-through mx-2">Rs.999</span> Rs.399!</a>
           </Button>
           <p className="text-sm text-muted-foreground">
             Instant PDF + printable tools | Private & discreet | One-time purchase

@@ -1,3 +1,4 @@
+
 import { Gift } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import StaticYogaPlan from './StaticYogaPlan';
@@ -56,7 +57,7 @@ export default function FreeBonusSection() {
               </div>
             </div>
             <p className="mt-12 text-center text-md font-semibold text-accent-foreground/80">
-              Get the guide and all bonuses today for a single, one-time payment of Rs.399.
+              Get the guide and all bonuses today for a single, one-time payment of Rs.999.
             </p>
           </div>
         </div>
