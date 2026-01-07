@@ -15,29 +15,14 @@ import FinalCTASection from '@/components/landing/FinalCTASection';
 import Footer from '@/components/landing/Footer';
 import WhoIsThisForSection from '@/components/landing/WhoIsThisForSection';
 import { Button } from '@/components/ui/button';
-import CelebrationEffect from '@/components/landing/CelebrationEffect';
 import Link from 'next/link';
 
 export default function Home() {
   const ctaRef = useRef<HTMLAnchorElement>(null);
-  const [showCelebration, setShowCelebration] = useState(false);
-
-  useEffect(() => {
-    // Trigger the animation shortly after the component mounts
-    const timer = setTimeout(() => {
-      setShowCelebration(true);
-    }, 100); // Small delay to ensure button is rendered
-
-    return () => clearTimeout(timer);
-  }, []);
-
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      {showCelebration && ctaRef.current && (
-          <CelebrationEffect originRef={ctaRef} />
-      )}
       <main className="flex-1">
         <div className="bg-secondary text-center py-3">
           <Link href="#footer" className="font-bold text-secondary-foreground hover:underline inline-block animate-beat">
