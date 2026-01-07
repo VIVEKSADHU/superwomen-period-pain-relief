@@ -11,6 +11,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import {googleAI} from '@genkit-ai/google-genai';
 
 const GentleYogaCalendarInputSchema = z.object({
   userExperience: z
@@ -42,6 +43,7 @@ const prompt = ai.definePrompt({
   name: 'gentleYogaCalendarPrompt',
   input: {schema: GentleYogaCalendarInputSchema},
   output: {schema: GentleYogaCalendarOutputSchema},
+  model: 'gemini-pro',
   prompt: `You are a certified yoga instructor specializing in gentle and restorative yoga for women experiencing menstrual discomfort.
 
   Based on the user's input, create a personalized 7-day yoga calendar with specific poses for each day.
