@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
+import { Badge } from '@/components/ui/badge';
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-comfort');
@@ -23,6 +24,9 @@ export default function HeroSection() {
           </div>
         )}
         <div className="text-center lg:text-left z-10">
+            <Badge variant="outline" className="mb-4 text-base py-1 px-4 border-primary text-primary animate-beat">
+                ✨ 50% OFF! Use Code: NEW50 ✨
+            </Badge>
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Your Period Shouldn't Control Your Life.
           </h1>
