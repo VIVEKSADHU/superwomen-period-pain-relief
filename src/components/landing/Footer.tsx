@@ -16,9 +16,11 @@ export default function Footer({ ctaRef }: { ctaRef: RefObject<HTMLAnchorElement
         <div className="bg-secondary rounded-lg p-8 max-w-2xl mx-auto">
           <h3 className="font-bold text-xl text-foreground">Not ready for the full guide yet?</h3>
           <p className="mt-2 mb-6 text-foreground/80">No problem at all. Start with my free, 1-page guide to immediate cramp relief. It’s my gift to you.</p>
-          <Button size="lg" asChild className="text-lg px-8 py-6">
-            <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Click here for Free Period Cramp Relief Tips</a>
-          </Button>
+          <div className="flex justify-center">
+            <Button size="lg" asChild className="text-lg px-8 py-6">
+              <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Click here for Free Period Cramp Relief Tips</a>
+            </Button>
+          </div>
         </div>
 
         <p className="mt-12 text-sm">
