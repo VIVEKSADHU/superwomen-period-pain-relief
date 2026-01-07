@@ -8,8 +8,8 @@ export default function Header() {
         <a href="#" className="font-headline text-xl font-bold text-primary mr-auto">
           superwomen.in
         </a>
-        <div className="flex items-center gap-x-8">
-            <Link href="#footer" className="hidden sm:block text-sm text-muted-foreground font-medium hover:text-primary transition-colors">
+        <div className="flex items-center gap-x-4 sm:gap-x-8">
+            <Link href="#footer" className="hidden md:block text-sm text-muted-foreground font-medium hover:text-primary transition-colors">
               Psst! Free resources at the bottom of the page 👇
             </Link>
           <Button asChild>

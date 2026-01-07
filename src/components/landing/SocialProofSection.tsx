@@ -63,17 +63,17 @@ export default function SocialProofSection() {
           </h2>
         </div>
 
-        {/* Carousel for Mobile */}
+        {/* Carousel for Mobile & Tablet */}
         <Carousel
           opts={{
             align: 'start',
             loop: true,
           }}
-          className="mx-auto mt-16 w-full max-w-xs sm:hidden"
+          className="mx-auto mt-16 w-full max-w-xs sm:max-w-md lg:hidden"
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index}>
+              <CarouselItem key={index} className="sm:basis-1/2">
                 <div className="p-1">
                   <Card className="flex h-full flex-col">
                     <CardContent className="flex-1 p-6">
@@ -103,8 +103,8 @@ export default function SocialProofSection() {
           <CarouselNext />
         </Carousel>
 
-        {/* Grid for Tablet and Desktop */}
-        <div className="mx-auto mt-16 hidden grid-cols-1 gap-6 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+        {/* Grid for Desktop */}
+        <div className="mx-auto mt-16 hidden lg:grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="flex flex-col">
               <CardContent className="flex-1 p-6">

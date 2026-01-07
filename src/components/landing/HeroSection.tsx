@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section id="hero" className="relative flex items-center pt-12 pb-20 md:pt-24 md:pb-32 lg:min-h-[calc(80vh-56px)]">
       <div className="container grid lg:grid-cols-2 gap-12 items-center">
         {heroImage && (
-          <div className="relative h-80 w-full lg:hidden rounded-lg overflow-hidden">
+          <div className="relative h-80 w-full rounded-lg overflow-hidden lg:hidden">
             <Image
               src={heroImage.imageUrl}
               alt={heroImage.description}
@@ -38,9 +38,9 @@ export default function HeroSection() {
               <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just <span className="line-through mx-2">Rs.999</span> Rs.399!</a>
             </Button>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground sm:text-base text-center lg:text-left">
-              <li className="flex items-center gap-2">✓ No pills or side effects</li>
-              <li className="flex items-center gap-2">✓ Ready in 5 minutes</li>
-              <li className="flex items-center gap-2">✓ Works for 95% of women</li>
+              <li className="flex items-center justify-center lg:justify-start gap-2">✓ No pills or side effects</li>
+              <li className="flex items-center justify-center lg:justify-start gap-2">✓ Ready in 5 minutes</li>
+              <li className="flex items-center justify-center lg:justify-start gap-2">✓ Works for 95% of women</li>
             </ul>
           </div>
         </div>
