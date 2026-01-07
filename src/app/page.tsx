@@ -39,8 +39,8 @@ export default function Home() {
           <CelebrationEffect originRef={ctaRef} />
       )}
       <main className="flex-1">
-        <div className="bg-accent text-center py-3">
-            <Link href="#footer" className="font-medium text-accent-foreground hover:underline">
+        <div className="bg-secondary text-center py-3">
+            <Link href="#footer" className="font-bold text-secondary-foreground hover:underline">
                 Psst! Not ready? Check out the free resources at the bottom 👇
             </Link>
         </div>
