@@ -37,6 +37,7 @@ export default function HeroSection() {
             <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>
               <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just <span className="line-through mx-2">Rs.999</span> Rs.399!</a>
             </Button>
+             <Link href="#footer" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Psst! Not ready? See my personal note at the bottom 👇</Link>
           </div>
         </div>
       </div>
