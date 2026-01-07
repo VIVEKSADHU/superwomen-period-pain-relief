@@ -1,1 +1,0 @@
-import './gentle-yoga-calendar';
