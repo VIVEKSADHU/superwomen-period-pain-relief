@@ -32,7 +32,7 @@ export default function HeroSection() {
           </p>
           <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6 animate-beat" asChild>
-              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just <span className="line-through mx-2">Rs.999</span> Rs.149!</a>
+              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just Rs.149! <span className="line-through mx-2">Rs.999</span></a>
             </Button>
              <Link href="#footer" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Psst! Not ready? See my personal note at the bottom 👇</Link>
           </div>
