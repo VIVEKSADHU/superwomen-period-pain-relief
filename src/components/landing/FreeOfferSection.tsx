@@ -14,7 +14,7 @@ export default function FreeOfferSection({ ctaRef }: { ctaRef: RefObject<HTMLAnc
           </p>
           <div className="flex justify-center">
             <Button size="lg" asChild className="font-bold text-lg px-8 py-6 animate-beat">
-              <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer">
                 Yes! Send Me The FREE Kit
               </a>
             </Button>
