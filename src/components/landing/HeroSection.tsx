@@ -24,9 +24,6 @@ export default function HeroSection() {
           </div>
         )}
         <div className="text-center lg:text-left z-10">
-            <Badge variant="outline" className="mb-4 text-base py-1 px-4 border-primary text-primary animate-beat">
-                ✨ 50% OFF! Use Code: NEW50 ✨
-            </Badge>
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Your Period Shouldn't Control Your Life.
           </h1>
@@ -35,7 +32,7 @@ export default function HeroSection() {
           </p>
           <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6 animate-beat" asChild>
-              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just <span className="line-through mx-2">Rs.999</span> Rs.399!</a>
+              <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just <span className="line-through mx-2">Rs.999</span> Rs.149!</a>
             </Button>
              <Link href="#footer" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Psst! Not ready? See my personal note at the bottom 👇</Link>
           </div>
