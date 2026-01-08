@@ -3,6 +3,7 @@ import type { RefObject } from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Check } from 'lucide-react';
 
 export default function HeroSection({ ctaRef }: { ctaRef: RefObject<HTMLAnchorElement> }) {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-comfort');
@@ -29,10 +30,24 @@ export default function HeroSection({ ctaRef }: { ctaRef: RefObject<HTMLAnchorEl
           <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-lg sm:text-xl text-muted-foreground">
             Get instant, natural relief for severe period cramps. Download your FREE 5-Minute Emergency Relief Kit — a simple, doctor-aware guide for busy women.
           </p>
+          <ul className="mt-6 mx-auto lg:mx-0 max-w-xl space-y-2 text-muted-foreground text-lg">
+            <li className="flex items-center justify-center lg:justify-start gap-2">
+              <Check className="h-5 w-5 text-primary" />
+              <span>Fast, natural comfort</span>
+            </li>
+            <li className="flex items-center justify-center lg:justify-start gap-2">
+              <Check className="h-5 w-5 text-primary" />
+              <span>Eases intense cramps</span>
+            </li>
+            <li className="flex items-center justify-center lg:justify-start gap-2">
+              <Check className="h-5 w-5 text-primary" />
+              <span>Simple at-home steps</span>
+            </li>
+          </ul>
           <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6 animate-beat" asChild>
               <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-                Send Me The FREE Relief Kit!
+                Yes! Send My FREE 5-Min Relief Kit
               </a>
             </Button>
             <p className="text-sm font-medium text-muted-foreground transition-colors">No signup needed | Instant PDF download</p>
