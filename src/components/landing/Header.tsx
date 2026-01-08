@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 
 export default function Header() {
@@ -8,8 +9,11 @@ export default function Header() {
           superwomen.in
         </a>
         <div className="flex items-center gap-x-4">
+          <Button asChild variant="ghost">
+            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">The Full Guide (₹149)</a>
+          </Button>
           <Button asChild>
-            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get the Guide</a>
+            <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Get FREE Relief Kit</a>
           </Button>
         </div>
       </div>

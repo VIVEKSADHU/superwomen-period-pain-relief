@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
+import { useRef } from 'react';
 import Header from '@/components/landing/Header';
 import HeroSection from '@/components/landing/HeroSection';
 import ProblemAwarenessSection from '@/components/landing/ProblemAwarenessSection';
@@ -14,33 +14,30 @@ import SafetyTrustSection from '@/components/landing/SafetyTrustSection';
 import FinalCTASection from '@/components/landing/FinalCTASection';
 import Footer from '@/components/landing/Footer';
 import WhoIsThisForSection from '@/components/landing/WhoIsThisForSection';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import FreeOfferSection from '@/components/landing/FreeOfferSection';
 
 export default function Home() {
   const ctaRef = useRef<HTMLAnchorElement>(null);
+  const ebookCtaRef = useRef<HTMLAnchorElement>(null);
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <div className="bg-secondary text-center py-3">
-          <Link href="#footer" className="font-bold text-secondary-foreground hover:underline inline-block animate-beat">
-            Not ready? Get your FREE 5-minute period pain relief kit 👇
-          </Link>
-        </div>
-        <HeroSection />
+        <HeroSection ctaRef={ctaRef} />
         <ProblemAwarenessSection />
+        <WhoIsThisForSection />
         <SolutionSection />
+        <FreeOfferSection ctaRef={ctaRef} />
+        <SafetyTrustSection />
+        <SocialProofSection />
+        {/* The Paid Offer Starts Here */}
         <WhatYouGetSection />
         <FreeBonusSection />
-        <WhoIsThisForSection />
         <PriceAnchoringSection />
-        <SocialProofSection />
-        <SafetyTrustSection />
         <FinalCTASection />
       </main>
-      <Footer ctaRef={ctaRef} />
+      <Footer />
     </div>
   );
 }

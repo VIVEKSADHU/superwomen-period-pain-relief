@@ -12,10 +12,10 @@ export default function PriceAnchoringSection() {
       <div className="container grid gap-12 md:grid-cols-2 md:items-center">
         <div className="text-center md:text-left">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Your Investment in Comfort
+            Your Investment in a Happier Period
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Consider the monthly cost of managing period pain — and what you could save.
+            For less than a single coffee date, you can get a lifetime of comfort. Let’s compare the usual monthly costs:
           </p>
           <div className="mt-8 grid grid-cols-1 gap-8 text-lg sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
             <div className="flex flex-col gap-2">
@@ -29,7 +29,7 @@ export default function PriceAnchoringSection() {
               <span className="text-sm text-muted-foreground">Time-consuming & often leads to more pills.</span>
             </div>
             <div className="flex flex-col gap-2 rounded-lg border-2 border-primary p-4 bg-secondary">
-              <span className="text-foreground">The Comfort Guide</span>
+              <span className="text-foreground">The Complete Comfort Guide</span>
               <div>
                 <span className="font-bold text-3xl text-primary">Rs.149</span>
                 <span className="line-through text-muted-foreground ml-2">Rs.999</span>

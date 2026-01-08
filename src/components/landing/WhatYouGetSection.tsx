@@ -18,18 +18,19 @@ export default function WhatYouGetSection() {
   return (
     <section id="what-you-get" className="bg-secondary py-20 sm:py-24">
       <div className="container">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            What's Inside The Guide?
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="font-bold text-primary">THE FULL SOLUTION</p>
+          <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl mt-2">
+            Ready for Long-Term Comfort? Get The Complete Guide.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            This 25-page, beautifully designed PDF is your complete playbook for a more comfortable period. Here’s exactly what you get:
+            The free kit is for emergencies. The Complete Comfort Guide is your lifetime plan. This 25-page, beautifully designed PDF is your entire playbook for a happier period.
           </p>
         </div>
         <div className="mt-16 grid gap-12 md:grid-cols-2 lg:max-w-5xl mx-auto items-start">
           <Card className="flex flex-col h-full">
             <CardHeader>
-              <CardTitle>The Complete Toolkit</CardTitle>
+              <CardTitle>Inside The Complete Comfort Guide:</CardTitle>
             </CardHeader>
             <CardContent className="flex-1">
               <ul className="space-y-4">
