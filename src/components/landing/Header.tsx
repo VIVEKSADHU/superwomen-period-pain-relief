@@ -1,7 +1,5 @@
 
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -10,27 +8,10 @@ export default function Header() {
         <a href="#" className="font-headline text-xl font-bold text-primary mr-auto">
           Superwomen
         </a>
-        <div className="hidden sm:flex items-center gap-x-4">
+        <div className="flex items-center gap-x-4">
           <Button asChild>
             <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Relief Kit (Rs.199)</a>
           </Button>
-        </div>
-        <div className="sm:hidden flex items-center">
-           <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent>
-              <nav className="flex flex-col gap-4 mt-8">
-                <Button asChild>
-                  <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Relief Kit (Rs.199)</a>
-                </Button>
-              </nav>
-            </SheetContent>
-          </Sheet>
         </div>
       </div>
     </header>
