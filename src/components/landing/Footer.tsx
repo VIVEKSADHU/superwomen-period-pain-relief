@@ -12,7 +12,7 @@ export default function Footer() {
             </p>
         </div>
         <p className="mt-12 text-sm">
-          © {new Date().getFullYear()} Period Peace. All rights reserved.
+          © {new Date().getFullYear()} Superwomen. All rights reserved.
         </p>
         <p className="text-xs mt-2 max-w-2xl mx-auto">
           Natural comfort support • Not a replacement for medical care
