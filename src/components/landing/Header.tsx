@@ -10,7 +10,7 @@ export default function Header() {
         </a>
         <div className="flex items-center gap-x-4">
           <Button asChild>
-            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Relief Kit (Rs.199)</a>
+            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Unlock Comfortable Periods</a>
           </Button>
         </div>
       </div>
