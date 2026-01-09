@@ -23,28 +23,28 @@ export default function HeroSection({ ctaRef }: { ctaRef: RefObject<HTMLAnchorEl
             />
           </div>
         )}
-        <div className="text-center lg:text-left z-10">
+        <div className="text-center z-10">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             That “Just Take a Painkiller” Feeling Stops Today.
           </h1>
-          <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-lg sm:text-xl text-muted-foreground">
+          <p className="mt-6 max-w-xl mx-auto text-lg sm:text-xl text-muted-foreground">
             Get instant, natural relief for severe period cramps. Download your FREE 5-Minute Emergency Relief Kit — a simple, doctor-aware guide for busy women.
           </p>
-          <ul className="mt-6 mx-auto lg:mx-0 max-w-xl space-y-2 text-muted-foreground text-lg">
-            <li className="flex items-center justify-center lg:justify-start gap-2">
+          <ul className="mt-6 mx-auto max-w-xl space-y-2 text-muted-foreground text-lg">
+            <li className="flex items-center justify-center gap-2">
               <Check className="h-5 w-5 text-primary" />
               <span>Fast, natural comfort</span>
             </li>
-            <li className="flex items-center justify-center lg:justify-start gap-2">
+            <li className="flex items-center justify-center gap-2">
               <Check className="h-5 w-5 text-primary" />
               <span>Eases intense cramps</span>
             </li>
-            <li className="flex items-center justify-center lg:justify-start gap-2">
+            <li className="flex items-center justify-center gap-2">
               <Check className="h-5 w-5 text-primary" />
               <span>Simple at-home steps</span>
             </li>
           </ul>
-          <div className="mt-10 flex flex-col items-center lg:items-start gap-4">
+          <div className="mt-10 flex flex-col items-center gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6 animate-beat" asChild>
               <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer">
                 Yes! Send My FREE 5-Min Relief Kit
