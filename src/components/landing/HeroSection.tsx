@@ -28,7 +28,7 @@ export default function HeroSection({ ctaRef }: { ctaRef: RefObject<HTMLAnchorEl
             That “Just Take a Painkiller” Feeling Stops Today.
           </h1>
           <p className="mt-6 max-w-xl mx-auto text-lg sm:text-xl text-muted-foreground">
-            Get instant, natural relief for severe period cramps. Download your <strong className="text-primary">FREE</strong> 5-Minute Emergency Relief Kit — a simple, doctor-aware guide for busy women.
+            Get instant, natural relief for severe period cramps. Download your 5-Minute Emergency Relief Kit for <strong className="text-primary">Rs.199</strong> — a simple, doctor-aware guide for busy women.
           </p>
           <ul className="mt-6 mx-auto max-w-xl space-y-2 text-muted-foreground text-lg">
             <li className="flex items-center justify-center gap-2">
@@ -47,7 +47,7 @@ export default function HeroSection({ ctaRef }: { ctaRef: RefObject<HTMLAnchorEl
           <div className="mt-10 flex flex-col items-center gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6 animate-beat" asChild>
               <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer">
-                Yes! Send My FREE 5-Min Relief Kit
+                Yes! Send My 5-Min Relief Kit — Rs.199
               </a>
             </Button>
             <p className="text-sm font-medium text-muted-foreground transition-colors">Instant PDF download • No spam • No signup hassle</p>
