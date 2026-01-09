@@ -12,7 +12,7 @@ export default function Header() {
         </a>
         <div className="hidden sm:flex items-center gap-x-4">
           <Button asChild>
-            <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer">Get Relief Kit (Rs.199)</a>
+            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Relief Kit (Rs.199)</a>
           </Button>
         </div>
         <div className="sm:hidden flex items-center">
@@ -25,7 +25,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent>
               <nav className="flex flex-col gap-4 mt-8">
-                 <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">Get Relief Kit (Rs.199)</a>
+                 <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">Get Relief Kit (Rs.199)</a>
               </nav>
             </SheetContent>
           </Sheet>

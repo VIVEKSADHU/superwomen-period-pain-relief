@@ -46,7 +46,7 @@ export default function HeroSection({ ctaRef }: { ctaRef: RefObject<HTMLAnchorEl
           </ul>
           <div className="mt-10 flex flex-col items-center gap-4">
             <Button size="lg" className="font-bold text-lg px-8 py-6 animate-beat" asChild>
-              <a ref={ctaRef} href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer">
+              <a ref={ctaRef} href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">
                 Yes! Send My Relief Kit — Rs.199
               </a>
             </Button>
