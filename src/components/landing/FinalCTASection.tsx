@@ -13,7 +13,7 @@ export default function FinalCTASection() {
         </p>
         <div className="mt-10 flex flex-col items-center gap-4">
           <Button size="lg" className="font-bold text-lg px-8 py-6" asChild>
-            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just Rs.149<span className="line-through mx-2">Rs.999</span></a>
+            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Instant Access — Just Rs.199<span className="line-through mx-2">Rs.499</span></a>
           </Button>
           <p className="text-sm text-muted-foreground">
             Instant PDF + all bonuses | Private & discreet | One-time purchase
