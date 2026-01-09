@@ -25,7 +25,9 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent>
               <nav className="flex flex-col gap-4 mt-8">
-                 <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">Get Relief Kit (Rs.199)</a>
+                <Button asChild>
+                  <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">Get Relief Kit (Rs.199)</a>
+                </Button>
               </nav>
             </SheetContent>
           </Sheet>
