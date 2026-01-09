@@ -26,7 +26,7 @@ export default function ProblemAwarenessSection() {
         </div>
         <div className="mt-16 grid items-center gap-12 md:grid-cols-2 lg:gap-16">
           {problemImage && (
-            <div className="relative h-80 w-full md:h-full rounded-lg overflow-hidden order-last md:order-first">
+            <div className="relative h-80 w-full md:h-[500px] rounded-lg overflow-hidden order-last md:order-first">
               <Image
                 src={problemImage.imageUrl}
                 alt={problemImage.description}
@@ -37,7 +37,7 @@ export default function ProblemAwarenessSection() {
             </div>
           )}
           <div className="mx-auto max-w-xl">
-             <h3 className="font-bold text-xl text-foreground mb-6">Does this sound familiar?</h3>
+             <h3 className="font-bold text-xl text-foreground mb-6 text-center md:text-left">Does this sound familiar?</h3>
             <ul className="space-y-4">
               {problems.map((problem, i) => (
                 <li key={i} className="flex items-start">

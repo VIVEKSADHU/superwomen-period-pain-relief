@@ -17,16 +17,11 @@ export default function PriceAnchoringSection() {
           <p className="mt-4 text-lg text-muted-foreground">
             For less than a single coffee date, you can get a lifetime of comfort. Let’s compare the usual monthly costs:
           </p>
-          <div className="mt-8 grid grid-cols-1 gap-8 text-lg sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
-            <div className="flex flex-col gap-2">
-              <span className="text-muted-foreground">Painkiller Strips</span>
-              <span className="font-bold text-2xl">Rs.100-300/month</span>
+          <div className="mt-8 grid grid-cols-1 gap-8 text-lg sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+            <div className="flex flex-col gap-2 p-4 rounded-lg bg-background">
+              <span className="text-muted-foreground">Painkillers & Visits</span>
+              <span className="font-bold text-2xl">Rs.900-2300+/mo</span>
               <span className="text-sm text-muted-foreground">Temporary relief, potential side-effects.</span>
-            </div>
-            <div className="flex flex-col gap-2">
-              <span className="text-muted-foreground">Gynaecologist Visit</span>
-              <span className="font-bold text-2xl">Rs.800-2000+</span>
-              <span className="text-sm text-muted-foreground">Time-consuming & often leads to more pills.</span>
             </div>
             <div className="flex flex-col gap-2 rounded-lg border-2 border-primary p-4 bg-secondary">
               <span className="text-foreground">The Complete Comfort Guide</span>
@@ -47,7 +42,7 @@ export default function PriceAnchoringSection() {
           </div>
         </div>
         {ctaImage && (
-           <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="relative order-first h-80 w-full md:order-last">
+           <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="relative order-first h-80 w-full md:order-last md:h-[500px]">
             <Image
               src={ctaImage.imageUrl}
               alt={ctaImage.description}

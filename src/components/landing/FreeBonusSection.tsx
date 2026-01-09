@@ -18,7 +18,7 @@ export default function FreeBonusSection() {
   return (
     <section id="bonus" className="py-20 sm:py-24">
       <div className="container">
-        <div className="relative rounded-lg bg-accent p-8 md:p-12 lg:p-16 overflow-hidden">
+        <div className="relative rounded-lg bg-accent p-6 md:p-12 overflow-hidden">
           <div className="relative z-10">
             <div className="text-center">
               <h2 className="font-headline text-3xl font-bold tracking-tight text-accent-foreground sm:text-4xl">

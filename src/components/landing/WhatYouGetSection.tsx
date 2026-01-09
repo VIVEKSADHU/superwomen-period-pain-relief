@@ -44,7 +44,7 @@ export default function WhatYouGetSection() {
             </CardContent>
           </Card>
           {yogaImage && (
-            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="relative h-96 w-full rounded-lg overflow-hidden">
+            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="relative h-96 w-full rounded-lg overflow-hidden md:h-full md:min-h-[500px]">
                <Image
                   src={yogaImage.imageUrl}
                   alt={yogaImage.description}
