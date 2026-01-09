@@ -15,7 +15,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Period Peace. All rights reserved.
         </p>
         <p className="text-xs mt-2 max-w-2xl mx-auto">
-          This guide offers comfort strategies and is not a substitute for professional medical advice. Please consult your doctor for any health concerns.
+          Natural comfort support • Not a replacement for medical care
         </p>
       </div>
     </footer>
