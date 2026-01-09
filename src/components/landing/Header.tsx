@@ -6,12 +6,12 @@ import { Menu } from 'lucide-react';
 export default function Header() {
   return (
     <header className="sticky top-4 z-50 w-full rounded-lg border border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center">
+      <div className="container flex h-14 max-w-screen-2xl items-center">
         <a href="#" className="font-headline text-xl font-bold text-primary mr-auto">
-          superwomen.in
+          Period Peace
         </a>
         <div className="hidden sm:flex items-center gap-x-4">
-          <Button asChild variant="ghost">
+          <Button asChild variant="outline">
             <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">The Full Guide (Rs.149)</a>
           </Button>
           <Button asChild>
