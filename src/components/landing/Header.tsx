@@ -11,9 +11,6 @@ export default function Header() {
           Period Peace
         </a>
         <div className="hidden sm:flex items-center gap-x-4">
-          <Button asChild variant="outline">
-            <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer">The Full Guide (Rs.149)</a>
-          </Button>
           <Button asChild>
             <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer">Get Relief Kit (Rs.199)</a>
           </Button>
@@ -28,7 +25,6 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent>
               <nav className="flex flex-col gap-4 mt-8">
-                 <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">The Full Guide (Rs.149)</a>
                  <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">Get Relief Kit (Rs.199)</a>
               </nav>
             </SheetContent>
