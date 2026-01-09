@@ -1,10 +1,12 @@
 
 import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Menu } from 'lucide-react';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 max-w-screen-2xl items-center">
+    <header className="sticky top-4 z-50 w-full rounded-lg border border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 max-w-screen-2xl items-center">
         <a href="#" className="font-headline text-xl font-bold text-primary mr-auto">
           superwomen.in
         </a>
@@ -17,9 +19,20 @@ export default function Header() {
           </Button>
         </div>
         <div className="sm:hidden flex items-center">
-           <Button asChild size="sm">
-            <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer">FREE Kit</a>
-          </Button>
+           <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent>
+              <nav className="flex flex-col gap-4 mt-8">
+                 <a href="https://superprofile.bio/vp/fix-your-period-pain-in-3-days-natural-remedies--yoga---heat-therapy-" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">The Full Guide (Rs.149)</a>
+                 <a href="https://docs.google.com/document/d/1g5EpkjWkYe1k4ndiZp67oKFfDCFLUZlGU9HFaJZAPzA/export?format=pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">Get FREE Relief Kit</a>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>

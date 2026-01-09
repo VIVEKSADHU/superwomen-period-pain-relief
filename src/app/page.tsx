@@ -21,9 +21,9 @@ export default function Home() {
   const ebookCtaRef = useRef<HTMLAnchorElement>(null);
 
   return (
-    <div className="flex min-h-screen flex-col bg-background">
+    <>
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 bg-background">
         <HeroSection ctaRef={ctaRef} />
         <ProblemAwarenessSection />
         <WhoIsThisForSection />
@@ -38,6 +38,6 @@ export default function Home() {
         <FinalCTASection />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
