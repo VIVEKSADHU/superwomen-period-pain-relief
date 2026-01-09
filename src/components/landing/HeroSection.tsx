@@ -28,7 +28,7 @@ export default function HeroSection({ ctaRef }: { ctaRef: RefObject<HTMLAnchorEl
             That “Just Take a Painkiller” Feeling Stops Today.
           </h1>
           <p className="mt-6 max-w-xl mx-auto text-lg sm:text-xl text-muted-foreground">
-            Get instant, natural relief for severe period cramps. Download your Emergency Relief Kit for <strong className="text-primary">Rs.199</strong> — a simple, doctor-aware guide for busy women.
+            Download your period pain ebook.
           </p>
           <ul className="mt-6 mx-auto max-w-xl space-y-2 text-muted-foreground text-lg">
             <li className="flex items-center justify-center gap-2">
